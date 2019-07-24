@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="mycss.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <script src="myjs.js"></script>
+</head>
+
+<body>
+<div id="main">
+  <div class="header">
+    <img src="icons/Collabo Logo.png" alt="logo" >
+    <h1>Project Dashboard</h1>
+
+  </div>
+
+  <div class="topnav">
+    <a href="index.html">
+      <img src="icons/dashboard.png" height="20px" width="20px"/> Project Dashboard
+    </a>
+
+    <a href="#Groups" >
+      <img src="icons/group.png" height="20px" width="20px"/> Group
+    </a>
+
+    <a href="#Inbox" >
+      <img src="icons/inbox.png" height="20px" width="20px"/> Inbox</a>
+    
+    <div class="dropdown" style="float:right">
+        <button class="dropbtn">
+          <img src="icons/avatar.svg" height="25px" width="25px" />
+          <img src="icons/arrow-down.svg" height="25px" width="25px" />
+        </button>
+        <div class="dropdown-content">
+          <a href="#Profile">Profile</a>
+          <a href="#Settings">Settings</a>
+          <a href="#LogOut">Log Out</a>
+        </div>
+      </div>
+
+    <a href="#Help" style= "float:right" >
+      <img src="icons/help.png" height="25px" width="25px" />
+    </a>  
+
+    <a href="#Settings" style= "float:right" >
+      <img src="icons/settings.png" height="25px" width="25px" />
+    </a>  
+
+    <a href="#Notifications" style= "float:right" >
+      <img src="icons/notification-bell.png" height="25px" width="25px" />
+    </a>  
+  </div>
+
+  <!--some padding to pull the search bar away from the top bar-->
+  <div>
+    <p></p>
+  </div>
+
+  <div class="searchform">
+      <input type="text" placeholder=" Search in project" style="text-align: center;font-family:Arial, FontAwesome;">
+  </div>
+
+  <div class="row">
+
+    <table class="projectSelectionTable">
+
+      <tr>
+        <td>
+          <div class= "responsive3">
+            <button class="button"><span><img src="icons/plus.png" height=25px width=25px>Add New Project</span></button>
+          </div>
+        </td>
+        <td>
+          <div class= "responsive3">
+            <button class="button"><span><img src="icons/cross.png" height=25px width=25px>Delete Project</span></button>
+          </div>
+        </td>
+      </tr>
+	  <br>
+      <tr class="projectSelectionTableRow">
+        <td class="projectSelectionTableData">
+          <div class="card">
+            <h2>Group Project 1</h2>
+            <p>Date: 18/03/19 - 03/04/19</p>
+            <p>Status: On-going</p>
+            <p>Progress: 85%</p>
+            <div class= "responsive3">
+              <button class="button" onclick="location.href='dash.html'"><span>Enter</span></button>
+            </div>
+          </div>
+        </td>
+
+        <td class="projectSelectionTableData">
+          <div class="card">
+            <h2>Group Project 2</h2>
+            <p>Date: 29/04/19 - 10/05/19</p>
+            <p>Status: N/A</p>
+            <p>Progress: 0%</p>
+            <div class= "responsive3">
+              <button class="button"><span>Enter </span></button>
+            </div>
+          </div>
+        </td>
+      </tr>
+
+      <tr>
+        <td class="projectSelectionTableData">
+          <div class="card">
+            <h2>Group Project 3</h2>
+            <p>Date: 27/05/19 - 05/06/19</p>
+            <p>Status: N/A</p>
+            <p>Progress: 0%</p>
+            <div class= "responsive3">
+              <button class="button"><span>Enter </span></button>
+            </div>
+          </div>
+        </td>
+
+        <td class="projectSelectionTableData">
+          <div class="card">
+            <h2>Group Project 4</h2>
+            <p>Date: DD/MM/YY - DD/MM/YY</p>
+            <p>Status: N/A</p>
+            <p>Progress: 0%</p>
+            <div class= "responsive3">
+              <button class="button"><span>Enter </span></button>
+            </div>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+</body>
+</html>

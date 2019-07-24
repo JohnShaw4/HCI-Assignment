@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="mycss.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <script src="myjs.js"></script>
+</head>
+
+<body>
+<div id="main">
+  <div class="header">
+    	<img src="icons/Collabo Logo.png" alt="logo">
+    <h1>Group Project 1 > <strong>Schedule</strong> </h1>
+	<br>
+
+  </div>
+
+  <div class="topnav">
+  
+    <a href="index.html">
+      <img src="icons/dashboard.png" height="20px" width="20px"/> Project Dashboard
+    </a>
+
+    <a href="#Groups" >
+      <img src="icons/group.png" height="20px" width="20px"/> Groups
+    </a>
+
+    <a href="#Inbox" >
+      <img src="icons/inbox.png" height="20px" width="20px"/> Inbox</a>
+    
+    <div class="dropdown" style="float:right">
+        <button class="dropbtn">
+          <img src="icons/avatar.svg" height="25px" width="25px" />
+          <img src="icons/arrow-down.svg" height="25px" width="25px" />
+        </button>
+        <div class="dropdown-content">
+          <a href="#Profile">Profile</a>
+          <a href="#Settings">Settings</a>
+          <a href="#LogOut">Log Out</a>
+        </div>
+      </div>
+
+    <a href="#Help" style= "float:right" >
+      <img src="icons/help.png" height="25px" width="25px" />
+    </a>  
+
+    <a href="#Settings" style= "float:right" >
+      <img src="icons/settings.png" height="25px" width="25px" />
+    </a>  
+
+    <a href="#Notifications" style= "float:right" >
+      <img src="icons/notification-bell.png" height="25px" width="25px" />
+    </a>  
+  </div>
+
+  <div id="sideNav" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <a href="dash.html">Home</a>
+    <a href="schedule_page.html">Schedule</a>
+    <a href="todoAdd.html">To Do List</a>
+    <a href="#">Complete</a>
+    <a href="#">File Storage</a>
+    <a href="#">Workspace History</a>
+    <a href="#">Video Conferencing</a>
+    <a href="#">Calendar</a>
+    <a href="#">Members</a>
+    <a href="#">Settings</a>
+  </div>
+
+  <div class="sideNavBar">
+      <button class="openbtn" onclick="openNav()">☰</button>  
+  </div>
+
+  <div class="searchform">
+      <input type="text" placeholder=" Search in project" style="text-align: center;font-family:Arial, FontAwesome;">
+  </div>
+
+  <div class="row">
+    <div class="leftcolumn">
+
+      <div class="card">
+            <h2>File Storage <img src="icons/arrow1.svg" height="20px" width="20px"/></h2>
+            <input type="text" placeholder="&#xF002; Search for file" style="font-family:Arial, FontAwesome" />
+            <h4><img src="icons/folder.png" class="folderIcon"/>&nbsp;&nbsp;&nbsp;&nbsp;Draft</h4>
+            <h4><img src="icons/open-folder.png" class="folderIcon"/>&nbsp;&nbsp;&nbsp;&nbsp;Description</h4>
+            <h4><img src="icons/folder.png" class="folderIcon"/>&nbsp;&nbsp;&nbsp;&nbsp;Persona</h4>
+      </div>
+  
+      <div class="card">
+        <h2>Workspace History <img src="icons/arrow1.svg" height="20px" width="20px"/></h2>
+        <h4><img src="icons/paper.png" class="paperIcon"/>Project 1 Draft &nbsp;&nbsp;&nbsp;
+          <div class="function" style="float:right; padding-top:15px;">
+              <img src="icons/up-arrow.png" style="width: 20px; height: 20px;"/> &nbsp;
+              <img src="icons/dot-more.png" style="width: 40px; height: 10px;"/> &nbsp;
+              <img src="icons/lock.png" style="width: 25px; height: 25px;"/> 
+          </div>  
+
+        </h4>
+        
+        <p style="padding-left: 50px;">Commit:</p>
+        <div class="commit">
+            <p style="padding-left: 70px;">Initial Version &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;18/03/19</p>
+            <p style="padding-left: 70px;">First draft copy  &nbsp;&nbsp;&nbsp;18/03/19</p>
+            <p style="padding-left: 70px;">Draft updated  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;19/03/19</p>
+            <p style="padding-left: 70px;">Draft Personas added &nbsp;21/03/19</p>
+        </div>
+      </div>
+  
+      <div class="card">
+        <h2>Video Conferencing <img src="icons/online-status.png" height="20px" width="20px"/></h2>
+        <div class="responsive2">
+            <img src="icons/video-call.png" style="width: 80px; height:60px; margin-left:60px">
+            <br>
+            <img src="icons/video-call2.png" style="width: 80px; height:60px;">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <img src="icons/video-call3.png" style="width: 80px; height:60px;">
+        </div>
+        <p style="text-align: center;">3 in conference right now.</p>
+        <div class= "responsive3">
+            <button class="VideoCallbutton"><span>Create </span></button>
+            <button class="VideoCallbutton"><span>Enter </span></button>
+        </div>
+      </div>
+  
+    </div>
+  
+    <div class="middlecolumn">
+
+      <img src="icons/groupmemberprogress.png"  style="width: 100%; height: 100%;"  />
+      <div class="card" style="margin-top: 0px;">
+        <div class="functionMenu">
+              <img src="icons/add.png" height="20px" width="20px"/>&nbsp;
+              <img src="icons/dot-more.png" style="width: 40px; height: 10px;"/>&nbsp;
+ 
+			   <a href="dash.html">
+				<img alt="expand" src="icons/compress.png" width="20" height="20px"/></a>
+        </div>
+
+     <h2 class="middleSectionheading">Schedule</h2><br>
+        <img src="icons/line.png" class="responsive1"/>
+		<div class="scrollable">
+        
+		<br>
+		<img src="icons/cross.png" width ="30px" height = "30px" >
+        <h6>Write down ideas on Google Doc</h6><br>
+		
+        <h3> People involved: <strong> Kyung-min, Lachlan </strong> </h3>
+		<h3> Meeting: <strong> OGGB Lab 9 - 1pm </strong> </h3>
+		<h3> Date: <strong>01- 05 - 19</strong> </h3>
+		<br>
+		<img src="icons/line.png" class="responsive1"/>
+		<br>
+		<br>
+		<img src="icons/cross.png" width ="30px" height = "30px">
+		<h6>Draft up an individual part</h6><br><br>
+        <h3> People involved:<strong> Lauren, Stephanie </strong></h3> 
+		<h3> Meeting:<strong> General Library - 10am </strong></h3>
+		<h3> Date:<strong> 12 - 05 - 19 </strong></h3>
+		<br>
+		<br>
+		<img src="icons/line.png" class="responsive1"/>
+		<br>
+		<br>
+		<img src="icons/cross.png" width ="30px" height = "30px">
+		<h6>Finalise draft for individual part</h6><br>
+		
+        <h3> People involved: <strong> Stephanie, John, Lachlan </strong> </h3>
+		<h3> Meeting:<strong> Video Conference - 3pm </strong> </h3>
+		<h3> Date:<strong> 05 - 06 - 19 </strong></h3>
+		<br>
+		<img src="icons/line.png" class="responsive1"/>
+		<br>
+		<br>
+		<img src="icons/cross.png" width ="30px" height = "30px">
+		<h6>Meeting to finalise and collate project</h6><br>
+		
+        <h3> People involved: <strong> Stephanie, John, Lachlan, Lauren, John </strong> </h3>
+		<h3> Meeting:<strong> Video Conference - 8pm </strong> </h3>
+		<h3> Date:<strong> 09 - 06 - 19 </strong></h3>
+		<br>
+		</div>
+    </div>
+  
+    <div class="hidden">
+        <div class="hidden"></div>
+    </div>
+	</div>
+      
+  
+    <div class="rightcolumn">
+          <div class="card">
+            <h2>Notifications <img src="icons/notification-bell.png" height="20px" width="20px" />&nbsp;<img src="icons/arrow1.svg" height="20px" width="20px"/></h2>
+            <p class="notificationColour"><img src="icons/avatar3.png" class="avatarIcon" /> &nbsp;Kyung-min replied to a comment</p>
+            <p><img src="icons/important.png" class="attentionIcon"/> &nbsp;Reminder: project due in 13 days!</p>
+            <p><img src="icons/avatar4.png" class="avatarIcon" /> &nbsp;Lauren posted a new comment</p>
+            <p><img src="icons/avatar2.png" class="avatarIcon" /> &nbsp;Lachlan has created a Google Doc</p>
+          </div>
+      
+          <div class="card">
+            <h2>Calendar</h2>
+            <img src="icons/calendar1.png" 
+                 style="width:250px;height:250px;"
+                 class = "center"/>
+          </div>
+      
+          <div class="card">
+            <h2>Project Due in</h2>
+            <div class="responsive4">
+                <img src="icons/duedate.png" style="margin-left:70px;"/>
+                <br>
+                <br>
+                <img src="icons/countdown.svg" style= "width:140px;height:140px;"/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <img src="icons/clock.png" style= "width:140px;height:140px;"/>
+              </div>
+              <br>
+          </div>
+          <button class="open-button">Chat (3/5)
+              <img src="icons/up-arrow2.png" height="25px" width="25px" hspace="10" style="float:right; " />  
+              <img src="icons/settings2.png" height="25px" width="25px" style="float:right;" />
+          </button>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,491 @@
+/*Some parts of the css are inspired and obtained from the example provided from tutorial.*/
+* {
+  box-sizing: border-box;
+} 
+
+.scrollable {
+  height: 600px;
+  overflow-y: scroll;
+ }
+
+ .scrollable2 {
+  height: 300px;
+  overflow-y: scroll;
+ }
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f8f8f8;
+}
+
+tr, td{
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+/* Header/Blog Title */
+.header {
+  text-align: center;
+  color:black;
+}
+
+.header h1 {
+  position: relative;
+  top: -10px;
+  left: -55px;
+  font-size: 30px;
+}
+
+.header img {
+  left: 0px;
+  top: 50px;
+
+  margin-top: -100px;
+  z-index: -1; 
+  float: left;
+  width: 115px;
+  height: 110px;
+  position:relative;
+} 
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+h3 {
+  color:black;
+  font-size:16px;
+  font-family:"Georgia";
+  margin-left:100px;
+ }
+
+h2 {
+  color:black;
+  font-size:20px;
+ }
+ 
+  h6{color:black;
+  font-size:20px;
+  margin-left:100px;
+  margin-top: -25px;
+ }
+
+tr, td {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.todo img:hover {
+	cursor: pointer;
+}
+
+form {
+	width: 550px;
+  border-style: solid;
+  border-width: 3px;
+  border-left-width: 3px;
+  border-right-width: 3px;
+  border-color: grey;
+  text-align: center;
+}
+
+span {
+  display: block;
+  overflow: hidden;
+  padding: 0 4px 0 6px
+}
+
+input {
+  padding: 6px 10px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+strong { 
+  font-weight: lighter;
+}
+
+/*-------------------------------------------------------*/
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden; 
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: #ddd;
+  color: black;
+}
+
+/*-------------------------------------------------------*/
+/* Create three columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 25%;
+}
+
+.middlecolumn {
+  float: left;
+  width: 50%;
+  padding-left: 20px;
+  
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/*-------------------------------------------------------*/
+/* Card for different sections */
+.card {
+  background-color: white;
+  padding: 19px;
+  margin-top: -10px;
+  margin-bottom: 40px;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after { 
+  content: "";
+  clear: both;
+  display: table;
+}
+.hidden{ color:#f8f8f8;}
+/*-------------------------------------------------------*/
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+  .column {
+    width: 100%;
+    display: block;
+  }
+
+}
+
+/*-------------------------------------------------------*/
+/*Inspired and alternate some part from https://www.w3schools.com/howto/howto_js_sidenav.asp*/
+/*side navigation bar*/
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 250px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 15px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f88585;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  margin-top: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: rgb(116, 116, 116);
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+/*-----------------------------------------------*/
+
+/*-----------------------------------------------*/
+/*Inspired by https://www.w3schools.com/howto/howto_css_animated_search.asp*/
+/*Search bar*/
+input[type=text] {
+  width: 100%;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  
+  background-color: white;
+  padding: 12px 30px 12px 40px;
+  resize: vertical;
+  display:block;
+}
+/*-----------------------------------------------*/
+
+/*-----------------------------------------------*/
+/*Inspired by https://www.w3schools.com/css/tryit.asp?filename=trycss_buttons_animate1*/
+.button {
+  border-radius: 4px;
+  background-color: #87acfc;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 20px;
+  padding: 10px;
+  width: 250px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  margin-bottom : 25px;
+}
+
+.VideoCallbutton {
+  border-radius: 4px;
+  background-color: #87acfc;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 20px;
+  padding: 10px;
+  width: 120px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span, .VideoCallbutton span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after, .VideoCallbutton span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span, .VideoCallbutton:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after, .VideoCallbutton:hover span:after{
+  opacity: 1;
+  right: 0;
+}
+
+/*Chat Button*/
+.open-button {
+  background-color: #87acfc;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+  font-size: 20px;
+}
+
+/*-------------------------------------------------------*/
+
+/*-------------------------------------------------------*/
+.dropdown {
+  float: left;
+  overflow: hidden; 
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px; 
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/*-------------------------------------------------------*/
+
+.responsive1 {
+  width: 100%;
+  height: auto;
+}
+
+.responsive2{
+  width:200px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.responsive3{
+  width:265px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.responsive4{
+  width:315px;
+  height: auto;
+  margin: 0 auto;
+}
+
+/*-------------------------------------------------------*/
+
+.searchform{
+  margin: 0 auto;
+  width:400px;
+}
+
+.tickboxIcon{
+  width: 20px; 
+  height: 20px;
+}
+
+.avatarIcon{
+  width: 45px; 
+  height: 45px;
+}
+
+.attentionIcon, .folderIcon, .paperIcon{
+  width:40px;
+  height: 40px;
+}
+
+.functionMenu{
+  float:right;
+  
+}
+
+.middleSectionheading {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.notificationColour {
+  color: rgb(98, 98, 168);
+}
+
+/*-------------------------------------------------------*/
+/*CSS for the dashboard project selection*/
+.projectSelectionTable{
+  width: 100%;
+  padding-right:250px;
+  padding-left:250px;
+}
+.projectSelectionTableRow{
+  padding-bottom: 20px;
+}
+.projectSelectionTableData{
+  padding-right:50px;
+  padding-left:50px;
+}
+
+/*-------------------------------------------------------*/
+
+/*-------------------------------------------------------*/
+/*To-do-list*/
+.addNewTaskSection{
+  margin:0 auto;
+  border-radius: 10px;
+}
+
+.toDoListTask{
+  width:550px; 
+  margin:0 auto; 
+  border-style: solid; 
+  border-color: grey; 
+  border-width: 3px; 
+  border-radius: 10px;
+}
+/*-------------------------------------------------------*/

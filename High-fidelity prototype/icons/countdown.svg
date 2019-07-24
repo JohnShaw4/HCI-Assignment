@@ -1,0 +1,13 @@
+<svg width="1792" height="1792" xmlns="http://www.w3.org/2000/svg">
+
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <path fill="#bf0000" id="svg_1" d="m192,1664l1408,0l0,-1024l-1408,0l0,1024zm384,-1216l0,-288q0,-14 -9,-23t-23,-9l-64,0q-14,0 -23,9t-9,23l0,288q0,14 9,23t23,9l64,0q14,0 23,-9t9,-23zm768,0l0,-288q0,-14 -9,-23t-23,-9l-64,0q-14,0 -23,9t-9,23l0,288q0,14 9,23t23,9l64,0q14,0 23,-9t9,-23zm384,-64l0,1280q0,52 -38,90t-90,38l-1408,0q-52,0 -90,-38t-38,-90l0,-1280q0,-52 38,-90t90,-38l128,0l0,-96q0,-66 47,-113t113,-47l64,0q66,0 113,47t47,113l0,96l384,0l0,-96q0,-66 47,-113t113,-47l64,0q66,0 113,47t47,113l0,96l128,0q52,0 90,38t38,90z"/>
+  <text stroke="null" transform="matrix(2.233644637880486,0,0,2.3175001439891014,-1112.4047562037554,-1415.3580124274847) " xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="250" id="svg_2" y="1099.973623" x="750.087304" stroke-opacity="null" stroke-width="0" fill="#000000">13</text>
+  <text stroke="null" transform="matrix(1.3005887269973755,0,0,1.3333470821380615,-164.64747521281242,-408.1782935298979) " xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="250" id="svg_3" y="1438.490923" x="532.796579" stroke-opacity="null" stroke-width="0" fill="#000000">Days</text>
+ </g>
+</svg>
